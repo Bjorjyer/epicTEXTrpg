@@ -1,8 +1,9 @@
+# RPG битва - мой первый проект
 import random
 import sys
-sys.stdout.reconfigure(encoding='utf-8')
+sys.stdout.reconfigure(encoding='utf-8') # для поддержки русских символов в консоли
 
-character1 = {
+character1 = { # персонаж 1
     "Здоровье": 100,
     "Имя": "Hero",
     "Уровень": random.randint(10, 20),
@@ -15,7 +16,8 @@ print(f"Здоровье: {character1['Здоровье']}")
 print(f"Урон: {character1['Урон']}")
 print(f"Уровень: {character1['Уровень']}")
 print(f"Инвентарь: {character1['Инвентарь'][1]}")
-character2 = {
+
+character2 = { # персонаж 2
     "Здоровье": 80,
     "Имя": "Enemy",
     "Уровень": random.randint(10, 20),
